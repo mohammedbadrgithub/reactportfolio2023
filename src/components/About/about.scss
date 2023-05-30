@@ -1,0 +1,96 @@
+@import '../../static';
+.about{
+    padding:calc($m-num * 2) 0 !important;
+    background-color:  $bg2;
+    overflow: hidden;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:15px;
+        & > div{
+            flex:1 0 400px;
+            max-width: 100%;
+        }
+        .left{
+            position: relative;
+         .image{
+            width: 450px;
+            text-align: center;
+            background-color: $bg1;
+            border-radius: 50%;
+            padding:25px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+            img{
+                width:250px;
+                filter: drop-shadow(2px 4px 13px black);
+                max-width: 100%;
+                
+            }
+        }
+         
+         .video{
+            position:absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 88px;
+            cursor: pointer;
+            // filter: drop-shadow(0 0 14px red);
+            svg{
+                border-radius: 50%;
+                color:$main-color;
+                animation: shadowAnimation 2s linear infinite;
+                // box-shadow: 0 0 10px  controlOpacity($main-color,4); 
+
+            }
+            }
+
+            
+        }
+        .right{
+            h2{
+                text-transform: capitalize;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+                color:  $g-color;
+                ul{
+                    li{
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+                        &::first-letter{
+                            color: $main-color;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media (max-width:500px){
+    .video{
+        
+       
+        top: 33% !important;
+      
+    }
+}
+@keyframes shadowAnimation{
+    0%,100%{
+        box-shadow: 0 0 4px 10px  controlOpacity($main-color,.2); 
+    }
+    30%{
+        box-shadow: 0 0 2px 24px  controlOpacity($main-color,.1);
+        
+    }
+    60%{
+        box-shadow: 0 0 10px -20px  controlOpacity($main-color,.2);
+    }
+    90%{
+        box-shadow: 0 0 10px 30px  controlOpacity($main-color,.1);
+    }
+}

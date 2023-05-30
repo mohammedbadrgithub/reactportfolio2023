@@ -1,0 +1,29 @@
+@import '../../static';
+.mainHeader{
+    text-align: center;
+    position: relative;
+    color:$main-color;
+    text-transform: capitalize;
+    font-size: 46px;
+    margin-bottom: calc($m-num * 2);
+}
+.mainHeader:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 95px;
+    opacity: .3;
+    color:$bg1;
+    text-shadow: 3px 3px 128px $main-color;
+    letter-spacing: -10px;
+}
+@media(max-width:500px){
+    .mainHeader{
+        font-size: 30px;
+    }
+    .mainHeader:after{
+        font-size: 75px;
+    }
+}

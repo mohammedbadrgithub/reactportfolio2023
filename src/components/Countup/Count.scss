@@ -1,0 +1,33 @@
+@import '../../static';
+.count{
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px;
+    .countSpan{
+        font-size: 60px;
+        font-weight: 500;
+        color:$main-color;
+        position: relative;
+        margin: auto;
+        margin-bottom: 20px;
+        display: inline-block;
+        
+    }
+    .countSpan:after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 7px;
+        bottom: -5px;
+        left:50%;
+        transform: translateX(-50%);
+        background-color: $main-color;
+    }
+    h3{
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 25px;
+        margin-bottom: 20px;
+        color:$main-color;
+    }
+}

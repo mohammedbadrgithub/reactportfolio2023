@@ -1,0 +1,46 @@
+@import '../../static';
+.buttonComponent{
+    border: 1px solid $w-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    cursor: pointer;
+   
+    span:nth-child(1){
+        background-color: $main-color;
+        transition: $m-transition ease-in-out;
+
+        svg{
+            flex: 1 1;
+            font-size: 66px;
+            padding: 13px;
+    
+        }
+    }
+    &:hover span:nth-child(1){
+        background-color: $w-color;
+        color: $main-color;
+    }
+    span:nth-child(2){
+        flex:2;
+        text-align: center;
+        padding: 10px;
+        background-color: $bg1;
+        height: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 130px;
+        text-transform: capitalize;
+        font-size: 26px;
+        font-weight: bold;
+        transition: $m-transition ease-in-out;
+
+    }
+    &:hover span:nth-child(2){
+        color: $w-color;
+        background-color: $main-color;
+    }
+}

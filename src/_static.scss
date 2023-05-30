@@ -1,0 +1,13 @@
+$bg1:hsl(257.42deg 34.83% 17.45%);
+$bg2:hsl(257.42deg 31.96% 19.02%);
+$main-color:hsl(34.25deg 100% 50.2%);
+$w-color:hsl(282.86deg 100% 98.63%);
+$g-color:hsl(260deg 14.59% 63.73%);
+$m-transition:.3s;
+$m-num:40px;
+
+
+
+@function controlOpacity($color,$opacity){
+    @return rgba($color,$opacity)
+}

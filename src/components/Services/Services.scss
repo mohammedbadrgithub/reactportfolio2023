@@ -1,0 +1,108 @@
+@import '../../static';
+.services{
+  padding:calc($m-num * 2) 0 !important;
+  overflow: hidden;
+
+.swiper{
+  padding:$m-num  5px !important;
+  transform: translateZ(50px);
+  perspective: 600px;
+    transform-style: preserve-3d;
+  .slide{
+    width: 346.667px !important;
+    min-height: 300px !important;
+    background-color: $bg2;
+    padding:$m-num  0 !important;
+    text-align: center;
+    border-radius: 6px;
+    
+    
+  
+    h3{
+      font-size: 60px;
+      color:$main-color;
+      width: 76px;
+      height: 76px;
+      border: 1px solid;
+      margin: auto;
+      line-height: 94px;
+      display: flex;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      svg{
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $main-color;
+        color:$w-color;
+      }
+    }
+    h2{
+      margin: 20px 0;
+      font-size: 30px;
+      font-weight: 800;
+      text-transform: capitalize;
+      color:$main-color;
+    
+    }
+    p{
+      padding:15px;
+    }
+    &:hover{
+      color:$w-color;
+      transition: .5s ease-in-out;
+      transform: translateZ(50px);
+      -webkit-transform:translateZ(50px) ;
+      perspective: 600px;
+      background-color: $main-color;
+      color:$w-color;
+    }
+    &:hover h2{
+      color:$w-color;
+    }
+    &:hover p{
+      color:$w-color;
+      
+    }
+    p{
+      color:$g-color
+    }
+  }
+
+}
+.statis{
+  margin-top:calc($m-num * 2) ;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px , 1fr));
+  gap:20px;
+  .count{
+    background-color: $bg2;
+  }
+}
+
+}
+  .swiper-button-prev,
+  .swiper-button-next{
+    color:$w-color !important;
+    background-color:$main-color !important;
+    padding:10px !important;
+    border: 1px solid $w-color !important;
+    font-size: 20px !important;
+}
+    
+  .swiper-button-disabled{
+    background-color: transparent !important;
+  }
+  .swiper-pagination-bullet{
+    width: 30px !important;
+    height: 10px !important;
+    border-radius: 8% !important;
+
+  }
+  .swiper-pagination-bullet-active{
+    background-color: $main-color !important;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 15px !important;
+  }

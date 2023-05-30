@@ -1,0 +1,175 @@
+@import './static';
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+	font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  border-radius: 10px;
+  /* outline: 1px solid slategrey; */
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.app{
+  background-color: $bg1;
+  color: $w-color;
+  padding-bottom: calc($m-num  * 3);
+}
+a{
+  text-decoration: none;
+  color: inherit
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.shadow{
+  box-shadow: 0 0 20px rgba(0 0 0 / 70%);}
+.centerscreen{
+    position: fixed;
+    right: -40px;
+    top:73%;
+    transform: translateY(-50%);
+    width:200px;
+    height: 100px;
+}
+
+.Toastify__toast-theme--light {
+  background: $bg1;
+  color: $main-color
+}
+.Toastify__toast-body {
+  margin: auto 0;
+  flex: 1 1 auto;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  svg{
+    fill: $main-color;
+  }
+}
+
+///
+.dnpetS{
+  width: 140px !important;
+  background-color: transparent !important;
+}
+
+/// scroll to up
+.up{
+  position: fixed;
+  right: 10px;
+  top: 281px;
+  font-size: 60px;
+  svg{
+    color:$main-color;
+    cursor:pointer;
+    animation: slideUpDown .5s infinite;
+    transform-origin: bottom;
+    &:hover{
+      animation-play-state: paused;
+    }
+  }
+
+}
+
+@keyframes slideUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+//////////
+.gxNfOK{
+  right:75px !important;
+  width:500px !important;
+  // animation: identifier 1s ease infinite !important;
+  background: radial-gradient(circle, $bg1  0%, controlOpacity($main-color,.3)  0%, $bg2 22%) !important;
+}
+.hiexti{
+  fill: $main-color !important;
+}
+.sc-dnqmqq.efROPc.rsc-ts.rsc-ts-bot:nth-child(2){
+  display: none !important;
+}
+.fXsOlx{
+  color: $main-color !important;
+}
+@keyframes identifier {
+  0%,100%{
+    background: radial-gradient(circle, $bg1  0%, controlOpacity($main-color,.3)  0%, $bg2 22%) !important;
+  }
+  40%{
+    background: radial-gradient(circle, $bg1  0%, controlOpacity($main-color,.1)  0%, $bg2 22%) !important;
+  }
+  70%{
+    background: radial-gradient(circle, $bg1  0%, controlOpacity($main-color,.4)  0%, $bg2 22%) !important;
+  }
+}
+
+@media screen and (max-width: 568px){
+    .gxNfOK , .jzmvbV {
+      border-radius: 6px !important;
+      left: initial !important;
+      
+      top: initial !important;
+      height: 371px !important;
+      right: unset !important;
+      right: none !important;
+      right: 57px !important;
+      
+  }
+}
+
+
+@media  (max-width: 500px){
+  .gxNfOK , .jzmvbV {
+    border-radius: 6px !important;
+    left: initial !important;
+    
+    top: initial !important;
+    height: 371px !important;
+    right: unset !important;
+    right: none !important;
+    right: 57px !important;
+    
+}
+}
